@@ -1,0 +1,62 @@
+# 🎯 Event Management Dashboard
+
+A full-stack MERN application for managing events with secure admin login, event dashboard, registration system, and responsive UI.
+
+---
+
+## 📦 Tech Stack
+
+- **Frontend**: React, Axios, Toastify
+- **Backend**: Node.js, Express.js, JWT
+- **Database**: MongoDB (via Mongoose)
+- **Auth**: JSON Web Tokens (JWT)
+- **Email**: Nodemailer (Gmail SMTP)
+
+---
+
+## ✅ Features
+
+### 👤 Admin Authentication
+- Secure login with JWT
+- Forgot password (email link)
+- Reset password functionality
+
+### 📋 Event Management
+- Add new event with details
+- View all events in card layout
+- Register user to event (seat count logic)
+- Delete events
+
+### 📊 Dashboard
+- Total Events
+- Total Registered Users
+- Available Seats
+
+### 💡 UI/UX
+- Clean layout with `EventCard`, `EventForm`, `Dashboard`
+- Responsive design
+- Dark mode toggle
+- Search filter by event title
+- Toast notifications
+
+---
+
+## 🛠️ Installation
+
+### 🔧 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/event-dashboard.git
+cd event-dashboard
+| Feature                             | Status |
+| ----------------------------------- | ------ |
+| 🔐 Admin Login/Auth                 | ✅ Done |
+| 📧 Forgot + Reset Email             | ✅ Done |
+| 📋 Event CRUD (Add/Delete/Register) | ✅ Done |
+| 📊 Dashboard Stats                  | ✅ Done |
+| 🌙 Dark Mode Toggle                 | ✅ Done |
+| 🔍 Event Search                     | ✅ Done |
+| 🔐 JWT Protected Routes             | ✅ Done |
+| 📦 MongoDB Integration              | ✅ Done |
+| 💅 UI/UX + Toastify                 | ✅ Done |
+| 📄 README.md                        | ✅ Done |

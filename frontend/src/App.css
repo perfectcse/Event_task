@@ -1,0 +1,117 @@
+/* 📁 frontend/src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+}
+
+.app-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.app-container.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.toggle-theme {
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.toggle-theme:hover {
+  background-color: #2563eb;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.events-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* 🎟️ Event Card Styling */
+.event-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.app-container.dark .event-card {
+  background-color: #374151;
+  color: white;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn-register,
+.btn-delete {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-register {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-register:hover {
+  background-color: #059669;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}

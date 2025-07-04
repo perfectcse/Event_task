@@ -1,0 +1,126 @@
+/* 📁 frontend/src/components/EventCard.css */
+
+.event-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.event-card p {
+  margin: 4px 0;
+  color: #4b5563;
+  font-size: 15px;
+}
+
+.seats-tag {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.event-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-register,
+.btn-delete {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-register {
+  background: #10b981;
+  color: white;
+}
+
+.btn-register:hover {
+  background: #059669;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+/* 🌙 Dark Mode Support */
+.app-container.dark .event-card {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  color: #f9fafb;
+}
+
+.app-container.dark .event-card h3,
+.app-container.dark .event-card p {
+  color: #f3f4f6;
+}
+
+.app-container.dark .seats-tag {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+.app-container.dark .btn-register {
+  background-color: #22c55e;
+}
+
+.app-container.dark .btn-register:hover {
+  background-color: #16a34a;
+}
+
+.app-container.dark .btn-delete {
+  background-color: #f87171;
+}
+
+.app-container.dark .btn-delete:hover {
+  background-color: #dc2626;
+}
+
+/* ✅ Responsive */
+@media screen and (max-width: 600px) {
+  .event-card {
+    padding: 16px;
+  }
+
+  .event-buttons {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .btn-register,
+  .btn-delete {
+    width: 100%;
+  }
+}
